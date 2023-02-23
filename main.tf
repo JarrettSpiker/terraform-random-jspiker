@@ -9,3 +9,7 @@ resource "random_id" "random" {
 output "random" {
   value = random_id.random.hex
 }
+
+output "random2" {
+  value = random_id.random.hex
+}
