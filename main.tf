@@ -10,10 +10,6 @@ output "random" {
   value = random_id.random.hex
 }
 
-output "random2" {
-  value = random_id.random.hex
-}
-
 output "random3" {
   value = random_id.random.hex
 }
