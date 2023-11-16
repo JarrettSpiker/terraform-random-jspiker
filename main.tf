@@ -10,6 +10,10 @@ output "random" {
   value = random_id.random.hex
 }
 
+output "random_oasis" {
+  value = random_id.random.hex
+}
+
 output "random2" {
   value = random_id.random.hex
 }
