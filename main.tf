@@ -19,4 +19,6 @@ output "random3" {
 }
 
 
-
+output "random4" {
+  value = random_id.random.hex
+}
