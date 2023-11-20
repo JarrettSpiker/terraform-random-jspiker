@@ -22,5 +22,10 @@ output "random3" {
   value = random_id.random.hex
 }
 
+output "random4" {
+  value = random_id.random.hex
+}
 
-
+resource "random_pet" "nickname" {
+  length = var.string_length
+}
