@@ -27,3 +27,7 @@ output "random4" {
   value = random_id.random.hex
 }
 
+output "random5" {
+  value = random_id.random.hex
+}
+
