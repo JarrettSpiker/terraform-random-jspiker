@@ -18,12 +18,3 @@ output "random2" {
   value = random_id.random.hex
 }
 
-output "random3" {
-  value = random_id.random.hex
-}
-
-
-output "random4" {
-  value = random_id.random.hex
-}
-
