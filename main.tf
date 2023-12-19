@@ -18,3 +18,10 @@ output "random2" {
   value = random_id.random.hex
 }
 
+resource "random_id" "random_new_on_prod" {
+  keepers = {
+    uuid = uuid()
+  }
+
+  byte_length = 8
+}
