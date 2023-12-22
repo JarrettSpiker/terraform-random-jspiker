@@ -15,6 +15,10 @@ resource "random_id" "e2e" {
 }
 
 
+
+
+
+
 output "random" {
   value = random_id.random.hex
 }
