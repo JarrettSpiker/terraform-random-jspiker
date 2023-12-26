@@ -37,3 +37,7 @@ output "random3" {
 
 
 
+output "random5" {
+  value = random_id.random.hex
+}
+
