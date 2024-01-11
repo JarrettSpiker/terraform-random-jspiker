@@ -6,6 +6,13 @@ resource "random_id" "random" {
   byte_length = 8
 }
 
+resource "random_pet" "pet1" {
+  keepers = {
+    uuid = uuid()
+  }
+}
+
+
 resource "random_id" "e2e" {
   keepers = {
     uuid = uuid()
@@ -37,4 +44,6 @@ output "random4" {
   value = random_id.random.hex
 }
 
-
+output "petname1" {
+  value = random_pet.pet1.id
+}
