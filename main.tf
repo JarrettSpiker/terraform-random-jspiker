@@ -18,6 +18,13 @@ resource "random_pet" "pet2" {
   }
 }
 
+
+resource "random_pet" "pet3" {
+  keepers = {
+    uuid = uuid()
+  }
+}
+
 resource "random_id" "e2e" {
   keepers = {
     uuid = uuid()
@@ -25,8 +32,6 @@ resource "random_id" "e2e" {
 
   byte_length = 8
 }
-
-
 
 
 output "random" {
