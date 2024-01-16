@@ -61,3 +61,6 @@ output "petname1" {
 output "petname2" {
   value = random_pet.pet2.id
 }
+output "petname3" {
+  value = random_pet.pet3.id
+}
