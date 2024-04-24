@@ -31,6 +31,13 @@ resource "random_pet" "pet4" {
   }
 }
 
+resource "random_pet" "pet5" {
+  keepers = {
+    uuid = uuid()
+  }
+}
+
+
 resource "random_id" "e2e" {
   keepers = {
     uuid = uuid()
