@@ -52,6 +52,11 @@ output "random2" {
   value = random_id.random.hex
 }
 
+output "random22" {
+  value = random_id.random.hex
+}
+
+
 output "random3" {
   value = random_id.random.hex
 }
